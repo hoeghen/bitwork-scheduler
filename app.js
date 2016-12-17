@@ -5,6 +5,6 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname+"/index.html")
 })
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log('version 3 listening on port 3000!')
 })
