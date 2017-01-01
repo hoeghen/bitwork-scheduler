@@ -17,7 +17,7 @@ app.listen(process.env.PORT || 3000, function () {
   console.log('version 3 listening on port 3000!')
 })
 
-Scheduler.setSchedule("every 5 seconds", function () {
+Scheduler.setSchedule("every 5 hours", function () {
   console.log('running schedule')
 })
 
@@ -32,4 +32,4 @@ function createIndexPage() {
 
 }
 
-ShopGun.getSession()
+ShopGun.getAll()
